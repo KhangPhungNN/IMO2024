@@ -1,5 +1,3 @@
-%LATEX by PNNK
-
 \documentclass[12pt,a4paper]{article}
 \usepackage[utf8]{vietnam}
 \usepackage[left=1.5cm, right=1.5cm, top=1cm, bottom=1cm]{geometry}
@@ -27,9 +25,9 @@
 \definecolor{ududff}{rgb}{0.30196078431372547,0.30196078431372547,1}
 
 \begin{document}
-\textbf{Problem 4} Let $ABC$ be a triangle with $AB<AC<BC$. Let the incentre and incircle of triangle $ABC$ be $I$ and $\omega$, respectively. Let $X$ be the point on the line $BC$ different from $C$ such that the line through $X$ parallel to $AC$ is tangent to $\omega$. Similarly, let $Y$ zbe the point on line $BC$ different from $B$ such that the line through $Y$ parallel to $AB$ is tangent to $\omega$. Let $AI$ intersect the circumcircle of triangle $ABC$ again at $P\neq A$. Let $K$ and $L$ is the midpoints of $AC$ and $AB$, respectively.\medskip
+\textbf{Problem 4} Let $ABC$ be a triangle with $AB<AC<BC$. Let the incentre and incircle of triangle $ABC$ be $I$ and $\omega$, respectively. Let $X$ be the point on the line $BC$ different from $C$ such that the line through $X$ parallel to $AC$ is tangent to $\omega$. Similarly, let $Y$ be the point on line $BC$ different from $B$ such that the line through $Y$ parallel to $AB$ is tangent to $\omega$. Let $AI$ intersect the circumcircle of triangle $ABC$ again at $P\neq A$. Let $K$ and $L$ is the midpoints of $AC$ and $AB$, respectively.\medskip
 
-Prove that $\angle KIL + \angle YPX = 180^{\circ}$.
+Prove that $\angle KIL + \angle YPX = 180^{\circ}$.\\
 
 \textbf{\underline{Solutions.}}
 
@@ -70,7 +68,7 @@ Prove that $\angle KIL + \angle YPX = 180^{\circ}$.
 		\draw[color=uuuuuu] (2.14064831153584,6.2466231687058125) node {\normalsize$I$};
 		\draw [fill=ccqqqq] (1.9940468502332884,3.805886716309123) circle (2pt);
 		\draw [fill=uuuuuu] (3.0040600291812534,-0.3826115508869559) circle (2pt);
-		\draw[color=uuuuuu] (3.182230210248223,0.05009356789149916) node {\normalsize$P$};
+		\draw[color=uuuuuu] (3.182230210248223,-0.85009356789149916) node {\normalsize$P$};
 		\draw [fill=uuuuuu] (3.6565279709577836,4.729356038587728) circle (2pt);
 		\draw[color=uuuuuu] (4.0119649431208,4.9225783822070275) node {\normalsize$Z$};
 		\draw [fill=uuuuuu] (3.0749344379351156,3.818192836852217) circle (2pt);
@@ -92,4 +90,17 @@ Prove that $\angle KIL + \angle YPX = 180^{\circ}$.
 	\end{scriptsize}
 \end{tikzpicture}
 
+$\omega$ tiếp xúc với các cạnh $AB,AC$ lần lượt tại $F,E$. Kẻ đường kính $FZ, ET$ với $\omega$. $TX$ cắt $ZY$ tại $A'$.\\
+
+Từ đây có $IA'\perp TZ$, Vì $FEZT$ là hình chữ nhật. Nên $FE\parallel TZ$. Do đó $IA'\perp FE$, mặt khác $FE\perp IA$. Điều này dẫn đến $A,I,A'$ thẳng hàng.\\
+
+$B,A',C$ lần lượt là đối xứng của $A$ qua $L,I,K$ Do đó $\angle KIL=\angle CA'B$.\\
+
+Ta có: $\angle TXB=\angle ACB=\angle APB=\angle A'PB$ Do đó tứ giác $XA'PB$ nội tiếp. Tương tự: Tứ giác $YA'PC$ nội tiếp.\\
+
+Tiến hành biến đổi góc như sau:\\
+$\angle YPX=\angle YPA'+\angle XPA'=\angle YCA'+\angle XBA'=180^{\circ}-\angle CA'B=180^{\circ}-\angle KIL$\\
+$\Rightarrow \angle KIL+\angle YPX=180^{\circ}$.\\
+
+Vậy ta có điều cần chứng minh.
 \end{document}
